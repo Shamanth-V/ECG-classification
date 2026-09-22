@@ -31,7 +31,7 @@ The project focuses on improving robustness to **recording-level distribution sh
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 The model consists of two parallel feature-extraction branches.
 
@@ -76,7 +76,7 @@ These representations are processed using convolutional residual blocks followed
 
 ## A separate MLP processes **18 engineered tabular features** into a **64-dimensional representation**. The two branches are then concatenated into a **192-dimensional fused feature representation**.
 
-## 🔬 Domain Alignment with CORAL
+##  Domain Alignment with CORAL
 
 A major component of the project is **Correlation Alignment (CORAL)**.
 
@@ -102,7 +102,7 @@ The implementation uses a **scale-free CORAL formulation with λ = 0.5**. Import
 
 ---
 
-## ⚖️ Handling Class Imbalance
+##  Handling Class Imbalance
 
 The dataset contains substantial class imbalance, making conventional cross-entropy training less suitable.
 
@@ -130,7 +130,7 @@ This provides additional exposure to minority classes without forcing completely
 
 ---
 
-## 📊 Feature Engineering
+##  Feature Engineering
 
 ### ECG Signal Features
 
@@ -165,7 +165,7 @@ Robust scaling using median and IQR is fitted only on the corresponding training
 
 ---
 
-## 🛠️ Data Augmentation
+##  Data Augmentation
 
 The training pipeline applies ECG-specific augmentation to improve robustness against recording variations.
 
@@ -180,7 +180,7 @@ The polarity augmentation also updates the corresponding peak-sign feature to ke
 
 ---
 
-## 🔄 Test-Time Augmentation
+##  Test-Time Augmentation
 
 During inference, predictions are generated using temporal shifts:
 
@@ -194,7 +194,7 @@ This reduces sensitivity to small temporal alignment differences in ECG recordin
 
 ---
 
-## 🧪 Training Strategy
+##  Training Strategy
 
 The training pipeline uses:
 
@@ -213,7 +213,7 @@ The implemented network contains approximately **518K trainable parameters**.
 
 ---
 
-## 📈 Experimental Results
+##  Experimental Results
 
 The 5-fold validation experiment produced the following overall out-of-fold metrics:
 
@@ -232,7 +232,7 @@ The fold-level macro F1 scores ranged from **0.8931 to 0.9296**, demonstrating t
 
 ---
 
-## 🏗️ Project Pipeline
+##  Project Pipeline
 
 ```text
 Official ECG Dataset
