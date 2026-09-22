@@ -6,7 +6,7 @@ The project focuses on improving robustness to **recording-level distribution sh
 
 ---
 
-## 🚀 Key Highlights
+##  Key Highlights
 
 * **Multi-class ECG arrhythmia classification** using deep learning
 * Dual-branch architecture combining:
